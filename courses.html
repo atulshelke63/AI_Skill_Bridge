@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | AI SkillBridge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a class="logo" href="index.html">
+        <span>AI</span> SkillBridge
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a class="active" href="courses.html">
+            Courses
+        </a>
+
+        <a href="roadmap.html">Roadmap</a>
+
+        <a href="assessment.html">Assessment</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a class="nav-btn" href="login.html">
+            Get Started
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <div class="page-hero">
+
+        <p class="eyebrow">LEARNING HUB</p>
+
+        <h1>
+            Learn the skills that matter in AI.
+        </h1>
+
+        <p>
+            Structured courses, practical projects,
+            and clear learning outcomes.
+        </p>
+
+    </div>
+
+
+    <div class="toolbar">
+
+        <input
+            id="courseSearch"
+            type="search"
+            placeholder="Search courses..."
+        >
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="beginner">
+                Beginner
+            </button>
+
+            <button class="filter" data-filter="intermediate">
+                Intermediate
+            </button>
+
+            <button class="filter" data-filter="advanced">
+                Advanced
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="course-grid full-grid" id="courseGrid">
+
+
+        <article
+            class="course-card searchable"
+            data-level="beginner"
+            data-name="python ai"
+        >
+
+            <div class="course-icon purple">🐍</div>
+
+            <span class="tag">Beginner</span>
+
+            <h3>Python for AI</h3>
+
+            <p>
+                Python, NumPy, Pandas, functions,
+                OOP and AI-ready programming.
+            </p>
+
+            <div class="course-meta">
+                <span>12 Modules</span>
+                <span>4 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="Python for AI"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+
+        <article
+            class="course-card searchable"
+            data-level="beginner"
+            data-name="data analytics"
+        >
+
+            <div class="course-icon green">📊</div>
+
+            <span class="tag">Beginner</span>
+
+            <h3>Data Analytics</h3>
+
+            <p>
+                Work with data, visualize insights,
+                and understand datasets.
+            </p>
+
+            <div class="course-meta">
+                <span>10 Modules</span>
+                <span>3 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="Data Analytics"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+
+        <article
+            class="course-card searchable"
+            data-level="intermediate"
+            data-name="machine learning"
+        >
+
+            <div class="course-icon blue">🧠</div>
+
+            <span class="tag">Intermediate</span>
+
+            <h3>Machine Learning</h3>
+
+            <p>
+                Regression, classification,
+                model evaluation, and ML workflows.
+            </p>
+
+            <div class="course-meta">
+                <span>18 Modules</span>
+                <span>6 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="Machine Learning"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+
+        <article
+            class="course-card searchable"
+            data-level="intermediate"
+            data-name="generative ai llm"
+        >
+
+            <div class="course-icon pink">✨</div>
+
+            <span class="tag">Intermediate</span>
+
+            <h3>Generative AI</h3>
+
+            <p>
+                Prompt engineering, LLM concepts,
+                AI tools, and GenAI applications.
+            </p>
+
+            <div class="course-meta">
+                <span>15 Modules</span>
+                <span>5 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="Generative AI"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+
+        <article
+            class="course-card searchable"
+            data-level="advanced"
+            data-name="deep learning"
+        >
+
+            <div class="course-icon orange">🔥</div>
+
+            <span class="tag">Advanced</span>
+
+            <h3>Deep Learning</h3>
+
+            <p>
+                Neural networks, CNNs, sequence models,
+                and deep learning projects.
+            </p>
+
+            <div class="course-meta">
+                <span>20 Modules</span>
+                <span>7 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="Deep Learning"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+
+        <article
+            class="course-card searchable"
+            data-level="advanced"
+            data-name="ai deployment"
+        >
+
+            <div class="course-icon cyan">☁️</div>
+
+            <span class="tag">Advanced</span>
+
+            <h3>AI Deployment</h3>
+
+            <p>
+                APIs, Docker, cloud concepts,
+                monitoring, and production AI apps.
+            </p>
+
+            <div class="course-meta">
+                <span>14 Modules</span>
+                <span>4 Projects</span>
+            </div>
+
+            <button
+                class="course-action"
+                data-course="AI Deployment"
+            >
+                Enroll →
+            </button>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        <a class="logo" href="index.html">
+            <span>AI</span> SkillBridge
+        </a>
+
+        <p>Learn. Build. Launch your AI career.</p>
+
+    </div>
+
+    <div>
+
+        <h4>Platform</h4>
+
+        <a href="courses.html">Courses</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="assessment.html">Assessment</a>
+
+    </div>
+
+    <div>
+
+        <h4>Account</h4>
+
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+
+    </div>
+
+</footer>
+
+
+<script src="courses.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+.dashboard {
+    background: #f5f7fb;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.welcome h1 {
+    font-size: 38px;
+    letter-spacing: -1.4px;
+}
+
+.welcome h1 span {
+    color: #5b5ff0;
+}
+
+.welcome p:not(.eyebrow) {
+    color: #64748b;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.dash-panel {
+    background: #fff;
+    border: 1px solid #e4e7ee;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.progress-panel {
+    min-height: 240px;
+}
+
+.panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-title h3 {
+    font-size: 17px;
+}
+
+.panel-title span,
+.panel-title a {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 700;
+}
+
+.big-progress {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.circle-progress {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #5b5ff0 0 72%,
+            #eceefe 72%
+        );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.circle-progress:after {
+    content: "";
+    position: absolute;
+    inset: 13px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.circle-progress strong,
+.circle-progress small {
+    position: relative;
+    z-index: 1;
+}
+
+.circle-progress strong {
+    font-size: 30px;
+}
+
+.circle-progress small {
+    color: #94a3b8;
+}
+
+.big-progress p,
+.big-progress small {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.big-progress h2 {
+    margin: 3px 0 12px;
+}
+
+.line {
+    height: 7px;
+    background: #edf0f6;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.line i {
+    display: block;
+    height: 100%;
+    background: #5b5ff0;
+    border-radius: 10px;
+}
+
+.level-panel {
+    text-align: center;
+}
+
+.level-icon {
+    font-size: 32px;
+}
+
+.level-panel p {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.level-panel h2 {
+    margin: 2px;
+}
+
+.level-panel .tag {
+    margin: 5px 0 10px;
+}
+
+.level-panel small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.activity-chart {
+    height: 110px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.activity-chart i {
+    min-width: 10px;
+    flex: 1;
+    background: #5b5ff0;
+    border-radius: 4px 4px 0 0;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    color: #a1a8b5;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+.courses-progress {
+    grid-column: 1;
+}
+
+.learning-item {
+    display: grid;
+    grid-template-columns: 48px 1fr 40px;
+    align-items: center;
+    gap: 13px;
+    margin-top: 22px;
+}
+
+.learning-item .course-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+}
+
+.learning-item small {
+    display: block;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.learning-item strong {
+    font-size: 12px;
+}
+
+.skills {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 120px 1fr 35px;
+    gap: 8px;
+    align-items: center;
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.skill b {
+    font-size: 11px;
+    text-align: right;
+}

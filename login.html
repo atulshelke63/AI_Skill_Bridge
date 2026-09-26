@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | AI SkillBridge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body class="auth-body">
+
+
+<header class="navbar">
+
+    <a class="logo" href="index.html">
+        <span>AI</span> SkillBridge
+    </a>
+
+    <a href="index.html" class="back-home">
+        ← Back to home
+    </a>
+
+</header>
+
+
+<main class="auth">
+
+
+    <div class="auth-visual">
+
+        <p class="eyebrow">
+            WELCOME TO AI SKILLBRIDGE
+        </p>
+
+        <h1>
+            Turn curiosity into an AI career.
+        </h1>
+
+        <p>
+            Track your skills, learn practical AI,
+            and build projects that matter.
+        </p>
+
+
+        <div class="auth-points">
+
+            <span>
+                ✓ Personalized learning paths
+            </span>
+
+            <span>
+                ✓ Practical AI projects
+            </span>
+
+            <span>
+                ✓ Progress tracking
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="login-card">
+
+
+        <div class="auth-tabs">
+
+            <button
+                class="active"
+                data-mode="login"
+            >
+                Login
+            </button>
+
+            <button
+                data-mode="signup"
+            >
+                Create account
+            </button>
+
+        </div>
+
+
+        <h2 id="authTitle">
+            Welcome back
+        </h2>
+
+        <p id="authSub">
+            Continue your AI learning journey.
+        </p>
+
+
+        <form id="authForm">
+
+
+            <label>
+
+                Name
+
+                <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="Your name"
+                    class="signup-only"
+                >
+
+            </label>
+
+
+            <label>
+
+                Email
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Password
+
+                <input
+                    type="password"
+                    placeholder="••••••••"
+                    required
+                >
+
+            </label>
+
+
+            <button
+                class="btn primary full"
+                type="submit"
+                id="authSubmit"
+            >
+                Login →
+            </button>
+
+
+        </form>
+
+
+        <small class="demo-note">
+            Demo project — no real account is created.
+        </small>
+
+
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+const tabs =
+    document.querySelectorAll(
+        ".auth-tabs button"
+    );
+
+const nameInput =
+    document.getElementById(
+        "nameInput"
+    );
+
+const title =
+    document.getElementById(
+        "authTitle"
+    );
+
+const sub =
+    document.getElementById(
+        "authSub"
+    );
+
+const submit =
+    document.getElementById(
+        "authSubmit"
+    );
+
+
+let mode = "login";
+
+
+function setMode(m) {
+
+    mode = m;
+
+
+    tabs.forEach(x => {
+
+        x.classList.toggle(
+            "active",
+            x.dataset.mode === m
+        );
+
+    });
+
+
+    nameInput.parentElement.style.display =
+        m === "signup"
+            ? "block"
+            : "none";
+
+
+    title.textContent =
+        m === "signup"
+            ? "Create your account"
+            : "Welcome back";
+
+
+    sub.textContent =
+        m === "signup"
+            ? "Start building your AI career today."
+            : "Continue your AI learning journey.";
+
+
+    submit.textContent =
+        m === "signup"
+            ? "Create Account →"
+            : "Login →";
+
+}
+
+
+tabs.forEach(t => {
+
+    t.onclick = () =>
+        setMode(t.dataset.mode);
+
+});
+
+
+setMode("login");
+
+
+document.getElementById(
+    "authForm"
+).onsubmit = e => {
+
+    e.preventDefault();
+
+
+    if (
+        mode === "signup" &&
+        nameInput.value
+    ) {
+
+        localStorage.setItem(
+            "skillbridgeName",
+            nameInput.value
+        );
+
+    }
+
+
+    location.href =
+        "dashboard.html";
+
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar nav.open {
+        display: flex;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 65px 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-visual {
+        height: 370px;
+    }
+
+    .stats {
+        padding: 25px 5%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stats div {
+        border: 0;
+    }
+
+    .section,
+    .dark-section,
+    .page {
+        padding: 65px 5%;
+    }
+
+    .course-grid,
+    .full-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta {
+        margin: 50px 5%;
+        padding: 40px;
+        gap: 25px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-progress,
+    .skills {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .auth {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .auth-visual {
+        text-align: center;
+    }
+
+    .auth-visual h1 {
+        font-size: 42px;
+    }
+
+    .auth-points {
+        justify-items: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .trust {
+        gap: 18px;
+    }
+
+    .hero-visual {
+        transform: scale(.85);
+        margin: -20px;
+    }
+
+    .float-one {
+        left: -5px;
+    }
+
+    .float-two {
+        right: -5px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-head,
+    .cta,
+    .welcome,
+    .toolbar {
+        display: block;
+    }
+
+    .section-head > a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .course-grid,
+    .full-grid,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbar input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .filters {
+        overflow: auto;
+    }
+
+    .filters button {
+        white-space: nowrap;
+    }
+
+    .page-hero h1,
+    .assessment-head h1 {
+        font-size: 35px;
+    }
+
+    .road-item {
+        grid-template-columns: 55px 1fr;
+        gap: 12px;
+    }
+
+    .road-number {
+        width: 55px;
+        height: 55px;
+    }
+
+    .roadmap:before {
+        left: 26px;
+    }
+
+    .road-item > div:last-child {
+        padding: 18px;
+    }
+
+    .dashboard .welcome h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .welcome .btn {
+        margin-top: 18px;
+    }
+
+    .big-progress {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .big-progress > div:last-child {
+        width: 100%;
+    }
+
+    .skill {
+        grid-template-columns: 95px 1fr 30px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .auth {
+        padding: 35px 18px;
+    }
+
+    .auth-visual h1 {
+        font-size: 35px;
+    }
+
+    .login-card {
+        padding: 23px;
+    }
+
+    .cta {
+        padding: 30px;
+    }
+
+    .cta h2 {
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | AI SkillBridge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a class="logo" href="index.html">
+        <span>AI</span> SkillBridge
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="courses.html">Courses</a>
+
+        <a href="roadmap.html">Roadmap</a>
+
+        <a href="assessment.html">Assessment</a>
+
+        <a class="active" href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a class="nav-btn" href="login.html">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="dashboard page">
+
+    <div class="welcome">
+
+        <div>
+
+            <p class="eyebrow">STUDENT DASHBOARD</p>
+
+            <h1>
+                Welcome back,
+                <span id="userName">AI Builder</span> 👋
+            </h1>
+
+            <p>
+                Keep building your skills.
+                You're making progress.
+            </p>
+
+        </div>
+
+        <a class="btn primary" href="courses.html">
+            Continue Learning
+        </a>
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+
+        <div class="dash-panel progress-panel">
+
+            <div class="panel-title">
+
+                <h3>Overall Progress</h3>
+
+                <span class="green">
+                    +18% this month
+                </span>
+
+            </div>
+
+
+            <div class="big-progress">
+
+                <div class="circle-progress">
+
+                    <strong>72%</strong>
+
+                    <small>Completed</small>
+
+                </div>
+
+
+                <div>
+
+                    <p>AI Career Path</p>
+
+                    <h2>AI Developer</h2>
+
+                    <div class="line">
+                        <i style="width:72%"></i>
+                    </div>
+
+                    <small>
+                        18 of 25 skills completed
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dash-panel level-panel">
+
+            <span class="level-icon">🏆</span>
+
+            <p>Current Level</p>
+
+            <h2>Level 4</h2>
+
+            <span class="tag">
+                AI Builder
+            </span>
+
+            <div class="line">
+                <i style="width:64%"></i>
+            </div>
+
+            <small>640 / 1000 XP</small>
+
+        </div>
+
+
+        <div class="dash-panel">
+
+            <div class="panel-title">
+
+                <h3>Weekly Activity</h3>
+
+                <span>6.5 hrs</span>
+
+            </div>
+
+
+            <div class="activity-chart">
+
+                <i style="height:45%"></i>
+                <i style="height:70%"></i>
+                <i style="height:55%"></i>
+                <i style="height:88%"></i>
+                <i style="height:64%"></i>
+                <i style="height:95%"></i>
+                <i style="height:75%"></i>
+
+            </div>
+
+
+            <div class="days">
+
+                <span>M</span>
+                <span>T</span>
+                <span>W</span>
+                <span>T</span>
+                <span>F</span>
+                <span>S</span>
+                <span>S</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="dash-panel courses-progress">
+
+            <div class="panel-title">
+
+                <h3>Continue Learning</h3>
+
+                <a href="courses.html">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div class="learning-item">
+
+                <span class="course-icon purple">
+                    🐍
+                </span>
+
+                <div>
+
+                    <b>Python for AI</b>
+
+                    <small>
+                        8 / 12 modules
+                    </small>
+
+                    <div class="line">
+                        <i style="width:67%"></i>
+                    </div>
+
+                </div>
+
+                <strong>67%</strong>
+
+            </div>
+
+
+            <div class="learning-item">
+
+                <span class="course-icon blue">
+                    🧠
+                </span>
+
+                <div>
+
+                    <b>Machine Learning</b>
+
+                    <small>
+                        9 / 18 modules
+                    </small>
+
+                    <div class="line">
+                        <i style="width:50%"></i>
+                    </div>
+
+                </div>
+
+                <strong>50%</strong>
+
+            </div>
+
+
+            <div class="learning-item">
+
+                <span class="course-icon pink">
+                    ✨
+                </span>
+
+                <div>
+
+                    <b>Generative AI</b>
+
+                    <small>
+                        6 / 15 modules
+                    </small>
+
+                    <div class="line">
+                        <i style="width:40%"></i>
+                    </div>
+
+                </div>
+
+                <strong>40%</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="dash-panel skills">
+
+            <div class="panel-title">
+
+                <h3>Skill Snapshot</h3>
+
+                <a href="assessment.html">
+                    Improve →
+                </a>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>Python</span>
+
+                <div class="line">
+                    <i style="width:86%"></i>
+                </div>
+
+                <b>86%</b>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>Machine Learning</span>
+
+                <div class="line">
+                    <i style="width:62%"></i>
+                </div>
+
+                <b>62%</b>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>Generative AI</span>
+
+                <div class="line">
+                    <i style="width:74%"></i>
+                </div>
+
+                <b>74%</b>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>Data</span>
+
+                <div class="line">
+                    <i style="width:68%"></i>
+                </div>
+
+                <b>68%</b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        <a class="logo" href="index.html">
+            <span>AI</span> SkillBridge
+        </a>
+
+        <p>
+            Learn. Build. Launch your AI career.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h4>Platform</h4>
+
+        <a href="courses.html">Courses</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="assessment.html">Assessment</a>
+
+    </div>
+
+    <div>
+
+        <h4>Account</h4>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+
+    </div>
+
+</footer>
+
+
+<script src="dashboard.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
